@@ -1,6 +1,6 @@
 {
   autoPatchelfHook,
-  buildFHSEnvChroot,
+  buildFHSEnv,
   dpkg,
   lib,
   stdenv,
@@ -55,7 +55,7 @@
     '';
   };
 
-  nordVPNfhs = buildFHSEnvChroot {
+  nordVPNfhs = buildFHSEnv {
     name = "nordvpnd";
     runScript = "${nordVPNBase}/bin/nordvpnd";
 
