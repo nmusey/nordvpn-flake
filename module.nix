@@ -38,7 +38,7 @@ in
         allowedUDPPorts = [1194];
       };
 
-      environment.systemPackages = [nordVpnPkg pkgs.libxslt];
+      environment.systemPackages = [nordVpnPkg pkgs.libxslt pkgs.nftables];
 
       users.groups.nordvpn = {};
       users.users = lib.genAttrs config.services.nordvpn.users (user: {
