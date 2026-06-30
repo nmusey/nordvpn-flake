@@ -65,7 +65,6 @@
       iptables
       iproute2
       libxml2_13
-      libxslt
       procps
       cacert
       libidn2
